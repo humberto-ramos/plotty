@@ -1,6 +1,24 @@
 # Plotty: C++ Interface to Matplotlib
 ![image](https://cloud.githubusercontent.com/assets/5616392/23658485/10cd0098-0343-11e7-95b5-46d899d6d70e.png)
 
+
+
+## Requisites
+Eigen
+ROS
+Matlibplot
+Goole Logging
+
+
+## To use it
+You will need to have a catkin space setup, which implies ROS is already install in the system. I have tested this software with ROS Kinetic and seems to be ok. Also, Google Logging module will be needed. I forked it [here](https://github.com/humberto-ramos/glog) and move the readme file to root so you can install it by following those directions. I am aware of a 'apt' way to install the logger but I did not have luck with it. I am using catkin tools to compile. Also, I have not tried catkin_make but I suppose it should be fine.
+
+After the installation of Google Logging module is complete, and plotty is in the catkin workspace you can catkin build.
+
+To test, you can do 
+`rosrun plotty mpl_example_node `
+To run the example code, it should display a few plots on the screen.
+
 ## Principles
 
 - `plotty::plot(...)` automatically creates a new figure
