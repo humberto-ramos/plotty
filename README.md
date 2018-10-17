@@ -4,10 +4,10 @@
 
 
 ## Requisites
-Eigen
-ROS
-Matlibplot
-Goole Logging
+*Eigen
+*ROS
+*Matlibplot
+*Goole Logging
 
 
 ## To use it
